@@ -7,14 +7,14 @@ def ordenamiento_por_mezcla(lista):
         derecha = lista[medio:]
         print(izquierda, '*' * 5, derecha)
 
-        # llamada recursiva en cada mitad
+        # llamada recursiva en cada mitad.
         ordenamiento_por_mezcla(izquierda)
         ordenamiento_por_mezcla(derecha)
 
-        # Iteradores para recorrer las dos sublistas
+        # Iteradores para recorrer las dos sublistas.
         i = 0
         j = 0
-        # Iterador para la lista principal
+        # Iterador para la lista principal.
         k = 0
 
         while i < len(izquierda) and j < len(derecha):
